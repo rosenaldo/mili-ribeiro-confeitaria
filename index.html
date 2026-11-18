@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mili Ribeiro | Confeitaria Artesanal — Bolos sob encomenda e produtos prontos</title>
+    <meta name="description"
+        content="Confeitaria artesanal premium. Bolos personalizados sob encomenda e produtos prontos para entrega. Cada criação é feita com carinho para transformar momentos em memórias.">
+    <meta name="author" content="Mili Ribeiro Confeitaria Artesanal">
+    <meta name="theme-color" content="#FCF9F6">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mili Ribeiro | Confeitaria Artesanal">
+    <meta property="og:description"
+        content="Bolos feitos com amor para momentos inesquecíveis. Encomendas personalizadas e produtos prontos.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Dancing+Script:wght@500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="https://img.icons8.com/color/96/000000/cake.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============ BOTÕES FLUTUANTES ============ -->
+    <div class="floating-buttons">
+        <a href="https://seu-app-delivery.com" class="float-btn float-btn-delivery" target="_blank" rel="noopener"
+            aria-label="Acessar produtos prontos no delivery">
+            <i class="fas fa-motorcycle" aria-hidden="true"></i>
+            <span>Produtos prontos</span>
+        </a>
+        <a href="https://wa.me/5584981655504?text=Oi!%20Tudo%20bem?%20Vi%20seus%20bolos%20e%20gostaria%20de%20fazer%20uma%20encomenda%20personalizada.%20Voc%C3%AA%20pode%20me%20ajudar?"
+            class="float-btn float-btn-whatsapp" target="_blank" rel="noopener"
+            aria-label="Fazer encomenda pelo WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span>Fazer encomenda</span>
+        </a>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#inicio" class="logo-link" aria-label="Mili Ribeiro Confeitaria Artesanal — ir para o início">
+                    <img src="img/logo.png" alt="Logo Mili Ribeiro Confeitaria Artesanal" width="140" height="62">
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#monte-bolo" class="nav-link">Monte seu bolo</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#produtos-prontos" class="nav-link">Produtos prontos</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ HERO ============ -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text fade-in">
+                    <span class="hero-eyebrow">Confeitaria Artesanal</span>
+                    <h1 class="hero-title">
+                        Bolos feitos com <em>amor</em> para momentos inesquecíveis.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Criações artesanais feitas especialmente para celebrar seus momentos mais especiais.
+                        Cada bolo é preparado para transformar instantes em memórias.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5584981655504?text=Oi!%20Tudo%20bem?%20Vi%20seus%20bolos%20e%20gostaria%20de%20fazer%20uma%20encomenda%20personalizada.%20Voc%C3%AA%20pode%20me%20ajudar?"
+                            class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Fazer minha encomenda
+                        </a>
+                        <a href="#produtos-prontos" class="btn btn-outline btn-large">
+                            Ver produtos prontos
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in">
+                    <div class="hero-frame">
+                        <!-- Substituir pelo primeiro bolo do catálogo. Se não houver imagem dedicada, manter img/1.jpeg -->
+                        <img src="img/1.jpg" alt="Bolo artesanal decorado com flores e acabamento delicado" width="460"
+                            height="575" loading="eager" fetchpriority="high">
+                    </div>
+                    <i class="fas fa-heart hero-ornament hero-ornament-1" aria-hidden="true"></i>
+                    <i class="fas fa-heart hero-ornament hero-ornament-2" aria-hidden="true"></i>
+                    <i class="fas fa-circle hero-ornament hero-ornament-3" aria-hidden="true"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ESCOLHA — DUAS EXPERIÊNCIAS ============ -->
+        <section class="escolha" aria-label="Duas formas de pedir">
+            <div class="container">
+                <span class="section-eyebrow">Escolha sua experiência</span>
+                <h2 class="section-title">Duas formas de saborear</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="section-subtitle">
+                    Crie um bolo exclusivo do zero ou escolha uma delícia pronta para pedir agora.
+                </p>
+
+                <div class="escolha-grid">
+                    <article class="escolha-card fade-in">
+                        <i class="fas fa-pencil-ruler escolha-icon" aria-hidden="true"></i>
+                        <span class="escolha-eyebrow">Sob encomenda</span>
+                        <h3 class="escolha-title">Feito só para você</h3>
+                        <p class="escolha-desc">
+                            Crie um bolo único, pensado para o seu momento — da massa ao acabamento final.
+                        </p>
+                        <a href="#monte-bolo" class="btn btn-primary">
+                            Personalizar meu bolo
+                        </a>
+                    </article>
+
+                    <article class="escolha-card fade-in">
+                        <i class="fas fa-motorcycle escolha-icon" aria-hidden="true"></i>
+                        <span class="escolha-eyebrow">Produtos prontos</span>
+                        <h3 class="escolha-title">Prontos para agora</h3>
+                        <p class="escolha-desc">
+                            Escolha uma delícia disponível para pedir agora e receber com toda a delicadeza.
+                        </p>
+                        <a href="#produtos-prontos" class="btn btn-outline">
+                            Ver cardápio
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MONTE SEU BOLO ============ -->
+        <section id="monte-bolo" class="monte-bolo">
+            <div class="container">
+                <span class="section-eyebrow">Experiência interativa</span>
+                <h2 class="section-title">Monte seu bolo</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="section-subtitle">
+                    Escolha cada detalhe com calma. Ao final, enviamos sua seleção organizada para o WhatsApp
+                    para que possamos preparar seu orçamento com todo o carinho.
+                </p>
+
+                <div class="monte-wrapper fade-in">
+
+                    <!-- PASSO 1 — TAMANHO (define as regras) -->
+                    <div class="monte-step">
+                        <label class="monte-label">
+                            <strong>01</strong> Escolha o tamanho
+                        </label>
+                        <div class="monte-options" data-group="tamanho" role="group" aria-label="Escolha do tamanho">
+                            <button type="button" class="monte-chip" data-value="Pequeno (10 a 15 pessoas)"
+                                data-size="small">
+                                Pequeno — 10 a 15 pessoas
+                            </button>
+                            <button type="button" class="monte-chip" data-value="Grande (acima de 20 pessoas)"
+                                data-size="large">
+                                Grande — acima de 20 pessoas
+                            </button>
+                            <button type="button" class="monte-chip" data-value="A definir com a confeiteira"
+                                data-size="custom">
+                                A definir
+                            </button>
+                        </div>
+
+                        <p class="monte-hint" id="monte-hint">
+                            Selecione o tamanho para liberar as opções de massa e recheio.
+                        </p>
+                    </div>
+
+                    <!-- PASSO 2 — MASSA -->
+                    <div class="monte-step">
+                        <label class="monte-label">
+                            <strong>02</strong> Escolha a massa
+                            <span class="monte-counter" id="counter-massa"></span>
+                        </label>
+                        <div class="monte-options" data-group="massa" data-max="1" role="group"
+                            aria-label="Escolha da massa">
+                            <button type="button" class="monte-chip" data-value="Amanteigada Tradicional">Amanteigada
+                                Tradicional</button>
+                            <button type="button" class="monte-chip" data-value="Amanteigada Chocolate">Amanteigada
+                                Chocolate</button>
+                            <button type="button" class="monte-chip" data-value="Baunilha">Baunilha</button>
+                            <button type="button" class="monte-chip" data-value="Cenoura">Cenoura</button>
+                        </div>
+                    </div>
+
+                    <!-- PASSO 3 — RECHEIOS (tradicionais + gourmet no mesmo passo) -->
+                    <div class="monte-step">
+                        <label class="monte-label">
+                            <strong>03</strong> Escolha o recheio
+                            <span class="monte-counter" id="counter-recheio"></span>
+                        </label>
+
+                        <!-- Subtítulo: Tradicionais -->
+                        <h4 class="monte-subtitle">Recheios tradicionais</h4>
+                        <div class="monte-options" data-group="recheio" data-shared-group="recheio" data-max="1"
+                            role="group" aria-label="Escolha de recheio tradicional">
+                            <button type="button" class="monte-chip" data-value="Brigadeiro">Brigadeiro</button>
+                            <button type="button" class="monte-chip" data-value="Beijinho">Beijinho</button>
+                            <button type="button" class="monte-chip" data-value="Ninho">Ninho</button>
+                            <button type="button" class="monte-chip" data-value="Doce de leite">Doce de leite</button>
+                            <button type="button" class="monte-chip" data-value="Prestígio">Prestígio</button>
+                            <button type="button" class="monte-chip" data-value="Oreo">Oreo</button>
+                            <button type="button" class="monte-chip" data-value="Abacaxi com coco">Abacaxi com
+                                coco</button>
+                            <button type="button" class="monte-chip" data-value="Maracujá">Maracujá</button>
+                            <button type="button" class="monte-chip"
+                                data-value="Outro (informar no WhatsApp)">Outro</button>
+                        </div>
+
+                        <!-- Subtítulo: Gourmet -->
+                        <h4 class="monte-subtitle">Recheios gourmet</h4>
+                        <div class="monte-options" data-group="recheio" data-shared-group="recheio" data-max="1"
+                            role="group" aria-label="Escolha de recheio gourmet">
+                            <button type="button" class="monte-chip" data-value="Mousse de Limão Siciliano">Mousse de
+                                Limão Siciliano</button>
+                            <button type="button" class="monte-chip" data-value="Mousse de Maracujá">Mousse de
+                                Maracujá</button>
+                            <button type="button" class="monte-chip" data-value="Ninho com Nutella">Ninho com
+                                Nutella</button>
+                            <button type="button" class="monte-chip" data-value="Ninho com Morangos">Ninho com
+                                Morangos</button>
+                            <button type="button" class="monte-chip" data-value="Três Amores">Três Amores</button>
+                            <button type="button" class="monte-chip" data-value="Kinder Bueno">Kinder Bueno</button>
+                            <button type="button" class="monte-chip" data-value="Ouro Branco">Ouro Branco</button>
+                            <button type="button" class="monte-chip"
+                                data-value="Outro (informar no WhatsApp)">Outro</button>
+                        </div>
+                    </div>
+
+                    <!-- PASSO 4 — DECORAÇÃO -->
+                    <div class="monte-step">
+                        <label class="monte-label">
+                            <strong>04</strong> Escolha a decoração
+                        </label>
+                        <div class="monte-options" data-group="decoracao" role="group"
+                            aria-label="Escolha da decoração">
+                            <button type="button" class="monte-chip" data-value="Flores naturais">Flores
+                                naturais</button>
+                            <button type="button" class="monte-chip" data-value="Flores em pasta">Flores em
+                                pasta</button>
+                            <button type="button" class="monte-chip" data-value="Tema infantil">Tema infantil</button>
+                            <button type="button" class="monte-chip" data-value="Delicada e minimalista">Delicada e
+                                minimalista</button>
+                            <button type="button" class="monte-chip" data-value="A definir">A definir</button>
+                        </div>
+                    </div>
+
+                    <!-- Resumo + CTA -->
+                    <div class="monte-footer">
+                        <p class="monte-resumo" id="monte-resumo">
+                            <span class="placeholder-msg">Selecione as opções acima para montar sua sugestão.</span>
+                        </p>
+                        <a href="#" id="monte-whatsapp" class="btn btn-primary btn-large" target="_blank"
+                            rel="noopener">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ GALERIA ============ -->
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <span class="section-eyebrow">Portfólio</span>
+                <h2 class="section-title">Criações personalizadas</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="section-subtitle">
+                    Inspire-se com alguns dos bolos que já criamos sob encomenda. O próximo pode ser o seu.
+                </p>
+
+                <div class="galeria-grid" id="galeria-grid">
+                    <!-- Cada item é clicável e abre o lightbox -->
+                    <!-- Imagem 1 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo de Bodas"
+                        data-desc="Bolo decorado com textura floral artesanal, detalhes em folha de ouro e topo personalizado.">
+                        <img src="img/1.jpg" alt="Bolo decorado com textura floral artesanal." loading="lazy"
+                            width="600" height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo de Bodas</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 2 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo de Casamento"
+                        data-desc="Bolo texturizado com cascata de alstroemerias brancas, detalhes dourados e topo em formato de coração.">
+                        <img src="img/2.jpg" alt="Bolo texturizado com cascata de alstroemerias brancas." loading="lazy"
+                            width="600" height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo de Casamento</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 3 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo de Cenoura"
+                        data-desc="Bolo de cenoura com recheio cremoso de chocolate, cobertura generosa de brigadeiro e topo personalizado.">
+                        <img src="img/3.jpg" alt="Seleção de bolo de cenoura artesanais" loading="lazy" width="600"
+                            height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo de Cenoura</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 4 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo Vintage Cake"
+                        data-desc="Bolo com cobertura branca, corações dourados, laço decorativo de fita e acabamento elegante.">
+                        <img src="img/4.jpg" alt="Bolo temático com decoração personalizada" loading="lazy" width="600"
+                            height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo Vintage Cake</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 5 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo Temático"
+                        data-desc="Bolo temático de vinho com cobertura branca, calda escorrendo simulando vinho, cachos de uvas, taça decorativa e topo personalizado com frase humorística.">
+                        <img src="img/5.jpg" alt="Bolo temático de aniversário" loading="lazy" width="600" height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo Temático</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 6 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo Infantil"
+                        data-desc="Bolo branco com pinceladas coloridas em tons pastéis na base, salpicos dourados e pérolas comestíveis no topo.">
+                        <img src="img/6.jpg" alt="Bolo Infantil com decoração elegante" loading="lazy" width="600"
+                            height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo Infantil</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 7 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo de Aniversário"
+                        data-desc="Bolo branco decorado com pétalas pink em relevo, nome personalizado e detalhes dourados.">
+                        <img src="img/7.jpg" alt="Bolo de Aniversário decorado" loading="lazy" width="600" height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo de Aniversário</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 8 -->
+                    <figure class="galeria-item fade-in" data-caption="Nake Cake"
+                        data-desc="Bolo nake cake com camadas aparentes, recheio cremoso, fita dourada e topo decorado com morangos fatiados e cerejas.">
+                        <img src="img/8.jpg" alt="Nake Cake de morango com decoração artesanal" loading="lazy"
+                            width="600" height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Nake Cake</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 9 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo Infantil"
+                        data-desc="Bolo rosa texturizado com pérolas comestíveis, flores tropicais e topo personalizado temático do Stitch.">
+                        <img src="img/9.jpeg" alt="Bolo Infantil" loading="lazy" width="600" height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo Infantil</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 10 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo Chocolate"
+                        data-desc="Bolo de chocolate coberto com granulado, decorado com brigadeiros, morangos frescos e delicados detalhes em folha de ouro.">
+                        <img src="img/10.jpg" alt="Bolo de chocolate com design único" loading="lazy" width="600"
+                            height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo Chocolate</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Imagem 11 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo de Batizado"
+                        data-desc="Bolo branco texturizado com arranjo de rosas brancas, gipsofilas na base e topo de anjinha rezando.">
+                        <img src="img/11.jpg" alt="Bolo de Batizado" loading="lazy" width="600" height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo de Batizado</div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <!-- Imagem 12 -->
+                    <figure class="galeria-item fade-in" data-caption="Bolo de Aniversário Floral"
+                        data-desc="Bolo branco decorado com flores em relevo rosa e verde, salpicos dourados e uma borboleta vazada em acrílico dourado no centro.">
+                        <img src="img/12.jpg" alt="Bolo de Bolo de Aniversário Floral" loading="lazy" width="600"
+                            height="600">
+                        <figcaption class="galeria-overlay">
+                            <div class="galeria-overlay-content">
+                                <div class="galeria-caption">Bolo de Aniversário Floral </div>
+                                <span class="galeria-cta">
+                                    <i class="fas fa-expand" aria-hidden="true"></i> Ver detalhes
+                                </span>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="produtos-cta">
+                    <a href="https://wa.me/5584981655504?text=Oi!%20Tudo%20bem?%20Vi%20seus%20bolos%20e%20gostaria%20de%20fazer%20uma%20encomenda%20personalizada.%20Voc%C3%AA%20pode%20me%20ajudar?"
+                        class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Solicitar orçamento
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ LIGHTBOX ============ -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da imagem">
+            <div class="lightbox-content">
+                <button class="lightbox-close" id="lightbox-close" aria-label="Fechar visualização">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Imagem anterior">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <img class="lightbox-img" id="lightbox-img" src="" alt="">
+                <div class="lightbox-info">
+                    <h3 class="lightbox-caption" id="lightbox-caption"></h3>
+                    <p class="lightbox-desc" id="lightbox-desc"></p>
+                    <a href="#" id="lightbox-cta" class="btn btn-primary btn-small" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Quero algo assim
+                    </a>
+                </div>
+                <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Próxima imagem">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- ============ PRODUTOS PRONTOS ============ -->
+        <section id="produtos-prontos" class="produtos">
+            <div class="container">
+                <span class="section-eyebrow">Entrega imediata</span>
+                <h2 class="section-title">Produtos prontos</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="section-subtitle">
+                    Delícias disponíveis para entrega rápida. Escolha e peça pelo app.
+                </p>
+
+                <div class="produtos-grid">
+                    <article class="produto-card fade-in">
+                        <div class="produto-img-wrap">
+                            <img class="produto-img" src="img/101.jpg"
+                                alt="Derreta-se de amor com as nossas sobremesas no pote!" loading="lazy" width="400"
+                                height="300">
+                        </div>
+                        <div class="produto-info">
+                            <h3 class="produto-title">Pudim no pote</h3>
+                            <p class="produto-desc">Derreta-se de amor com as nossas sobremesas no pote! Feitas com
+                                ingredientes selecionados e muito carinho para adoçar o seu dia.</p>
+                            <a href="https://seu-app-delivery.com" class="btn btn-ghost btn-small" target="_blank"
+                                rel="noopener">
+                                <i class="fas fa-motorcycle" aria-hidden="true"></i> Pedir agora
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card fade-in">
+                        <div class="produto-img-wrap">
+                            <img class="produto-img" src="img/102.jpeg" alt="Impossível resistir a essa combinação!"
+                                loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="produto-info">
+                            <h3 class="produto-title">Ninho com Morangos no pote</h3>
+                            <p class="produto-desc">Impossível resistir a essa combinação! Camadas cremosas, morangos
+                                frescos selecionados e aquela cobertura de chocolate que derrete na boca.</p>
+                            <a href="https://seu-app-delivery.com" class="btn btn-ghost btn-small" target="_blank"
+                                rel="noopener">
+                                <i class="fas fa-motorcycle" aria-hidden="true"></i> Pedir agora
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card fade-in">
+                        <div class="produto-img-wrap">
+                            <img class="produto-img" src="img/103.jpeg" alt="Mini Vulcão sabor Dois Amores.
+                                " loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="produto-info">
+                            <h3 class="produto-title">Mini Vulcão sabor Dois Amores</h3>
+                            <p class="produto-desc">O melhor dos dois mundos em uma única sobremesa!</p>
+                            <a href="https://seu-app-delivery.com" class="btn btn-ghost btn-small" target="_blank"
+                                rel="noopener">
+                                <i class="fas fa-motorcycle" aria-hidden="true"></i> Pedir agora
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="produto-card fade-in">
+                        <div class="produto-img-wrap">
+                            <img class="produto-img" src="img/100.jpeg" alt="Ninho com geleia de morango"
+                                loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="produto-info">
+                            <h3 class="produto-title">Ninho com geleia de morango</h3>
+                            <p class="produto-desc">Massa molhadinha com uma cobertura generosa dividida entre o
+                                clássico brigadeiro de chocolate e o irresistível creme de leite Ninho.</p>
+                            <a href="https://seu-app-delivery.com" class="btn btn-ghost btn-small" target="_blank"
+                                rel="noopener">
+                                <i class="fas fa-motorcycle" aria-hidden="true"></i> Pedir agora
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="produtos-cta">
+                    <a href="https://seu-app-delivery.com" class="btn btn-primary btn-large" target="_blank"
+                        rel="noopener">
+                        <i class="fas fa-motorcycle" aria-hidden="true"></i> Ver todos os produtos prontos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DIFERENCIAIS ============ -->
+        <section class="diferenciais">
+            <div class="container">
+                <span class="section-eyebrow">Nossa essência</span>
+                <h2 class="section-title">Nossa arte em cada detalhe</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="section-subtitle">
+                    Seja na encomenda personalizada ou nos produtos prontos, o cuidado é o mesmo.
+                </p>
+
+                <div class="diferenciais-grid">
+                    <div class="diferencial fade-in">
+                        <div class="diferencial-icon">
+                            <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="diferencial-title">Produção Artesanal</h3>
+                        <p class="diferencial-text">
+                            Cada bolo e doce é feito à mão, com técnicas tradicionais e muito cuidado em todas as
+                            etapas.
+                        </p>
+                    </div>
+
+                    <div class="diferencial fade-in">
+                        <div class="diferencial-icon">
+                            <i class="fas fa-seedling" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="diferencial-title">Ingredientes Selecionados</h3>
+                        <p class="diferencial-text">
+                            Utilizamos apenas ingredientes de alta qualidade, frescos e de fornecedores confiáveis.
+                        </p>
+                    </div>
+
+                    <div class="diferencial fade-in">
+                        <div class="diferencial-icon">
+                            <i class="fas fa-palette" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="diferencial-title">Personalização Total</h3>
+                        <p class="diferencial-text">
+                            Criamos sob medida para seu evento, do sabor à decoração, garantindo exclusividade.
+                        </p>
+                    </div>
+
+                    <div class="diferencial fade-in">
+                        <div class="diferencial-icon">
+                            <i class="fas fa-award" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="diferencial-title">Acabamento Delicado</h3>
+                        <p class="diferencial-text">
+                            Detalhes minuciosos que fazem a diferença e transformam nossos produtos em verdadeiras obras
+                            de arte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ COMO ENCOMENDAR ============ -->
+        <section id="como-encomendar" class="como-encomendar">
+            <div class="container">
+                <span class="section-eyebrow">Passo a passo</span>
+                <h2 class="section-title">Como encomendar</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="section-subtitle">
+                    Você escolhe cada detalhe: massa, recheio e decoração. Nós transformamos em realidade.
+                </p>
+
+                <div class="steps-wrapper">
+                    <div class="steps-line" aria-hidden="true"></div>
+                    <div class="steps-grid">
+                        <div class="step fade-in">
+                            <div class="step-number">01</div>
+                            <h3 class="step-title">Converse conosco</h3>
+                            <p class="step-text">
+                                Entre em contato pelo WhatsApp e conte sua ideia, data do evento e quantidade de
+                                pessoas.
+                            </p>
+                        </div>
+
+                        <div class="step fade-in">
+                            <div class="step-number">02</div>
+                            <h3 class="step-title">Escolha os detalhes</h3>
+                            <p class="step-text">
+                                Defina sabor da massa, recheio, cobertura e estilo da decoração.
+                            </p>
+                        </div>
+
+                        <div class="step fade-in">
+                            <div class="step-number">03</div>
+                            <h3 class="step-title">Receba sua criação</h3>
+                            <p class="step-text">
+                                Aprovamos o design, produzimos com carinho e entregamos no dia combinado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="steps-cta">
+                    <a href="https://wa.me/5584981655504?text=Oi!%20Tudo%20bem?%20Vi%20seus%20bolos%20e%20gostaria%20de%20fazer%20uma%20encomenda%20personalizada.%20Voc%C3%AA%20pode%20me%20ajudar?"
+                        class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Quero encomendar agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DEPOIMENTOS ============ -->
+        <section id="depoimentos" class="depoimentos">
+            <div class="container">
+                <span class="section-eyebrow">Carinho de quem provou</span>
+                <h2 class="section-title">O que dizem por aí</h2>
+                <div class="section-divider" aria-hidden="true">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="section-subtitle">
+                    A alegria de quem experimentou nossas criações artesanais.
+                </p>
+
+                <div class="depoimentos-grid">
+                    <!-- ATENÇÃO: depoimentos de exemplo — substituir por depoimentos reais -->
+                    <article class="depoimento-card fade-in">
+                        <p class="depoimento-text">
+                            Encomendei o bolo de bodas da minha filha e ficou perfeito! Escolhi o sabor,
+                            a massa e a decoração do tema dela. Todos amaram!
+                        </p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar" aria-hidden="true">AC</div>
+                            <div>
+                                <h3 class="depoimento-nome">Ana Claudia</h3>
+                                <span class="depoimento-evento">Encomenda personalizada</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="depoimento-card fade-in">
+                        <p class="depoimento-text">
+                            Precisava de um doce rápido e pedi pelo app. Chegou super rápido e estava delicioso!
+                            Ótima opção para emergências.
+                        </p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar" aria-hidden="true">MS</div>
+                            <div>
+                                <h3 class="depoimento-nome">Mariana Silva</h3>
+                                <span class="depoimento-evento">Produto pronto</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="depoimento-card fade-in">
+                        <p class="depoimento-text">
+                            Já encomendei várias vezes e sempre surpreende! A atenção aos detalhes e o carinho
+                            no atendimento fazem toda diferença.
+                        </p>
+                        <div class="depoimento-autor">
+                            <div class="depoimento-avatar" aria-hidden="true">CM</div>
+                            <div>
+                                <h3 class="depoimento-nome">Carla Mendes</h3>
+                                <span class="depoimento-evento">Cliente fiel</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA FINAL ============ -->
+        <section class="cta-final">
+            <div class="cta-content">
+                <span class="cta-eyebrow">Vamos criar juntas</span>
+                <h2 class="cta-title">Seu momento merece um bolo especial.</h2>
+                <div class="cta-ornament" aria-hidden="true">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="cta-text">
+                    Conte para nós como você imaginou. Vamos transformar sua ideia
+                    em uma criação feita especialmente para você.
+                </p>
+                <a href="https://wa.me/5584981655504?text=Oi!%20Tudo%20bem?%20Vi%20seus%20bolos%20e%20gostaria%20de%20fazer%20uma%20encomenda%20personalizada.%20Voc%C3%AA%20pode%20me%20ajudar?"
+                    class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Quero fazer minha encomenda
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">Mili Ribeiro</div>
+                    <span class="footer-subtitle">Confeitaria Artesanal</span>
+                    <p class="footer-text">
+                        Criando doces memórias e momentos especiais com muito amor e dedicação.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Para encomendas</h3>
+                    <a href="https://wa.me/5584981655504?text=Oi!%20Tudo%20bem?%20Vi%20seus%20bolos%20e%20gostaria%20de%20fazer%20uma%20encomenda%20personalizada.%20Voc%C3%AA%20pode%20me%20ajudar?"
+                        class="footer-link" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> (84) 9 8165 - 5504
+                    </a>
+                    <p class="footer-info">Prazo mínimo: 5 dias úteis</p>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Produtos prontos</h3>
+                    <a href="https://seu-app-delivery.com" class="footer-link" target="_blank" rel="noopener">
+                        <i class="fas fa-motorcycle" aria-hidden="true"></i> Acessar delivery
+                    </a>
+                    <p class="footer-info">Entregas de terça a domingo<br>das 10h às 20h</p>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Redes sociais</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/miliribeiroconfeitariaartesana" target="_blank"
+                            rel="noopener" aria-label="Instagram da Mili Ribeiro">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@mili_ribeiro0?_r=1&_t=ZS-94Q1CkkTgNL" target="_blank"
+                            rel="noopener" aria-label="TikTok da Mili Ribeiro">
+                            <i class="fab fa-tiktok" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Mili Ribeiro — Confeitaria Artesanal. Todos os direitos
+                    reservados.</p>
+                <p>Desenvolvido com <i class="fas fa-heart" aria-hidden="true"></i> para doces momentos</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
